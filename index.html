@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Something Just For You, Shashank 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffe4ef;--card:#fff;--ink:#2a1020;--pink:#ffb6d3;--hot:#d6165f;--soft:#ffd6e7;--dot:#f3b4cf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1020;--card:#3a1830;--ink:#ffe9f2;--pink:#ff8fbd;--hot:#ff4d8d;--soft:#5a2446;--dot:#4a2038}}
+:root[data-theme="dark"]{--bg:#2a1020;--card:#3a1830;--ink:#ffe9f2;--pink:#ff8fbd;--hot:#ff4d8d;--soft:#5a2446;--dot:#4a2038}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:'Baloo 2','Trebuchet MS',system-ui,sans-serif}
+body{background-image:radial-gradient(var(--dot) 2px,transparent 2px);background-size:28px 28px;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:28px 20px;overflow-x:hidden}
+.card{position:relative;width:100%;max-width:380px;background:var(--card);border:4px solid var(--ink);border-radius:28px;box-shadow:8px 8px 0 var(--ink);padding:56px 22px 30px;text-align:center}
+.tape{position:absolute;top:-16px;left:50%;width:150px;height:34px;transform:translateX(-50%) rotate(-2deg);background:repeating-linear-gradient(45deg,#ff5c9d 0 12px,#ffb6d3 12px 24px);border:3px solid var(--ink)}
+.badge{position:absolute;top:-22px;right:-16px;width:84px;height:84px;border-radius:50%;background:var(--hot);color:#fff;border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;line-height:1.05;transform:rotate(12deg);text-transform:uppercase}
+h1{font-size:30px;line-height:1.1;margin:6px 0 18px;font-weight:800}
+h1 span{color:var(--hot)}
+.screen{display:none}.screen.on{display:block;animation:pop .5s ease}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+.env{position:relative;width:100%;height:170px;margin:10px 0 14px;cursor:pointer;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.env .body{position:absolute;inset:0;background:var(--pink);border:4px solid var(--ink);border-radius:12px;box-shadow:6px 6px 0 var(--ink);overflow:hidden}
+.env .body:before,.env .body:after{content:"";position:absolute;bottom:0;width:50%;height:100%;background:var(--soft)}
+.env .body:before{left:0;clip-path:polygon(0 0,100% 100%,0 100%)}
+.env .body:after{right:0;clip-path:polygon(100% 0,100% 100%,0 100%)}
+.flap{position:absolute;top:0;left:0;width:100%;height:60%;background:#ff8fbd;border:4px solid var(--ink);border-radius:12px 12px 0 0;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease;z-index:3}
+.seal{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--hot);border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:20px;z-index:4;transition:opacity .3s}
+.env.open{animation:none}.env.open .flap{transform:rotateX(180deg);z-index:1}.env.open .seal{opacity:0}
+.hint{font-family:'Caveat',cursive;font-size:26px;margin:8px 0 0}
+.btn{font-family:inherit;font-weight:800;font-size:16px;color:var(--ink);background:var(--card);border:3px solid var(--ink);border-radius:999px;padding:10px 22px;box-shadow:4px 4px 0 var(--ink);cursor:pointer;margin:6px 4px;transition:transform .1s,box-shadow .1s}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.hot{background:var(--hot);color:#fff}
+.big{font-size:56px;margin:0;animation:bob 1.6s ease-in-out infinite}
+.quote{background:var(--soft);border:3px dashed var(--ink);border-radius:20px;padding:20px 16px;margin:16px 0;min-height:118px;display:flex;align-items:center;justify-content:center;font-family:'Caveat',cursive;font-size:27px;line-height:1.15;font-weight:600}
+.small{font-size:12px;letter-spacing:.25em;opacity:.6;margin-top:18px;text-transform:uppercase}
+.heart{position:fixed;pointer-events:none;font-size:24px;animation:fly 2.2s ease-out forwards;z-index:9}
+@keyframes fly{from{opacity:1;transform:translateY(0) scale(.6)}to{opacity:0;transform:translateY(-70vh) scale(1.4) rotate(20deg)}}
+
+.polas{display:flex;flex-direction:column;gap:22px;margin:18px 0 8px}
+.pola{position:relative;background:#fff;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:8px 8px 10px;transform:rotate(-2deg);color:#2a1020}
+.pola:nth-child(2){transform:rotate(2deg)}
+.pola img{display:block;width:100%;border:2px solid #2a1020}
+.pola b{display:block;font-family:'Caveat',cursive;font-size:24px;margin-top:6px;font-weight:600}
+.pola:before{content:"";position:absolute;top:-12px;left:50%;width:70px;height:22px;transform:translateX(-50%) rotate(3deg);background:repeating-linear-gradient(45deg,#ff5c9d 0 8px,#ffb6d3 8px 16px);border:2px solid var(--ink)}
+.letter{background:var(--soft);border:3px dashed var(--ink);border-radius:20px;padding:20px 16px;margin:20px 0 10px;font-family:'Caveat',cursive;font-size:24px;line-height:1.25;text-align:left;font-weight:600}
+.sign{display:block;margin-top:12px;font-size:30px;color:var(--hot);text-align:right}
+
+.arena{position:relative;height:250px;margin-top:6px}
+.arena .btn{position:absolute;margin:0;white-space:nowrap;transition:left .22s ease,top .22s ease,transform .22s ease}
+#yes{left:50%;top:18px;transform:translateX(-50%)}
+#no{left:50%;top:150px;transform:translateX(-50%);touch-action:none}
+.msg{font-family:'Caveat',cursive;font-size:26px;min-height:34px;margin:4px 0}
+.win{display:none}.win.on{display:block;animation:pop .5s ease}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="tape"></div>
+  <div class="badge">Made<br>with<br>love</div>
+
+  <section class="screen on" id="s1">
+    <h1>Something Just <span>For You</span></h1>
+    <div class="env" id="env" role="button" aria-label="Open the envelope">
+      <div class="body"></div><div class="flap"></div><div class="seal">💖</div>
+    </div>
+    <p class="hint">tap to open, Shashank… 💌</p>
+    <div class="small">a little note from me</div>
+  </section>
+
+  <section class="screen" id="s2">
+    <p class="big">🧸</p>
+    <h1>Happy Boyfriends Day,<br><span>Shashank!</span></h1>
+    <div class="quote" id="q"></div>
+    <button class="btn hot" id="next">Another one 💕</button>
+    <button class="btn" id="boom">Send hugs 🤗</button><br><button class="btn hot" id="note">Open my note 💌</button>
+    <div class="small">3rd October · made with love</div>
+  </section>
+
+  <section class="screen" id="s3">
+    <p class="big">💐</p>
+    <h1>A little note<br>from <span>Sidhi</span></h1>
+    <div class="polas">
+      <div class="pola"><img src="images/bouquet.jpg" alt="Pink roses and lilies"><b>flowers for my favourite person 🌸</b></div>
+      <div class="pola"><img src="images/hill-walk.jpg" alt="Walking hand in hand"><b>us, wandering wherever 🍃</b></div>
+      <div class="pola"><img src="images/mirror-selfie.jpg" alt="Us in the mirror"><b>my favourite view: us 🪞💗</b></div>
+    </div>
+    <div class="letter">
+      You are sweet and kind,<br>
+      You are perfectly fine,<br>
+      You are like a sun to my darkness and a hope to my sorrow.<br>
+      As you move my hair away from my face,<br>
+      you are doing the same thing you did to my cursed faith.<br>
+      People come and go like a passing cloud,<br>
+      you were always there to look after me like your bride. 💗
+      <span class="sign">forever yours, Sidhi 🧸</span>
+    </div>
+    <button class="btn hot" id="again">More hugs 🤗</button>
+    <button class="btn" id="back">← back</button><br><button class="btn hot" id="more">One more thing… 💘</button>
+    <div class="small">3rd October · made with love</div>
+  </section>
+
+  <section class="screen" id="s4">
+    <div id="ask">
+      <p class="big" id="em">🥺</p>
+      <h1>Shashank,<br><span>do you love me?</span></h1>
+      <div class="msg" id="msg">pretty please…</div>
+      <div class="arena" id="arena">
+        <button class="btn hot" id="yes">Yes 💖</button>
+        <button class="btn" id="no">No 💔</button>
+      </div>
+    </div>
+    <div class="win" id="win">
+      <p class="big">🥰</p>
+      <h1>I knew it!<br><span>I love you too,<br>Shashank</span> 💗</h1>
+      <div class="letter">You just made my whole day, and honestly my whole life, brighter. Happy Boyfriends Day, my love.<span class="sign">forever yours, Sidhi 🧸</span></div>
+      <button class="btn hot" id="boom2">Shower of love 💞</button>
+      <button class="btn" id="replay">Ask again 😜</button>
+    </div>
+    <div class="small">3rd October · made with love</div>
+  </section>
+</main>
+
+<script>
+var quotes=[
+"You're my favourite notification, Shashank. 📱💗",
+"Home isn't a place. It's you. 🏡",
+"I love you more than chai on a rainy day. ☕🌧️",
+"Every love story is beautiful, but ours is my favourite. 📖",
+"You make ordinary days feel like my favourite movie. 🎬",
+"Thank you for being my safe place and my best adventure. 🌍",
+"My heart did a little flip the day I met you, and it still does. 🦋",
+"If I had a rose for every time I thought of you, I'd walk in a garden forever. 🌹",
+"You + me = my favourite equation. ➕💞",
+"Still choosing you. Today, tomorrow, always. 💍✨",
+"You're the reason I smile at my phone like a fool. 😊",
+"Best boyfriend award goes to… you, obviously. 🏆💖"
+];
+var i=-1,q=document.getElementById('q');
+function show(){var n;do{n=Math.floor(Math.random()*quotes.length)}while(n===i);i=n;q.textContent=quotes[i];q.style.animation='none';q.offsetHeight;q.style.animation='pop .4s ease'}
+function hearts(n){var e=['💖','💗','💕','🧸','✨','💌','🌸'];for(var k=0;k<n;k++){(function(k){setTimeout(function(){var h=document.createElement('div');h.className='heart';h.textContent=e[Math.floor(Math.random()*e.length)];h.style.left=(5+Math.random()*90)+'vw';h.style.bottom='-10px';document.body.appendChild(h);setTimeout(function(){h.remove()},2300)},k*70)})(k)}}
+document.getElementById('env').onclick=function(){
+  this.classList.add('open');hearts(14);
+  setTimeout(function(){document.getElementById('s1').classList.remove('on');document.getElementById('s2').classList.add('on');show()},900)};
+document.getElementById('next').onclick=function(){show();hearts(6)};
+document.getElementById('boom').onclick=function(){hearts(30)};
+function go(a,b){document.getElementById(a).classList.remove('on');document.getElementById(b).classList.add('on');window.scrollTo(0,0)}
+document.getElementById('note').onclick=function(){go('s2','s3');hearts(24)};
+document.getElementById('again').onclick=function(){hearts(34)};
+document.getElementById('back').onclick=function(){go('s3','s2')};
+
+(function(){
+var no=document.getElementById('no'),yes=document.getElementById('yes'),ar=document.getElementById('arena'),msg=document.getElementById('msg'),em=document.getElementById('em');
+var tries=0;
+var lines=["pretty please…","hehe, not that one 😏","nice try, Shashank!","the button is shy 🙈","you can't catch it 🏃","are you sure about that? 🥹","my heart is watching 👀","just say yes already 💕","the No button is tired 😮‍💨","last chance… 😌"];
+var faces=["🥺","😏","😜","🙈","🏃","🥹","👀","💕","😮‍💨","😌"];
+function overlap(a,b){return !(a.right<b.left||a.left>b.right||a.bottom<b.top||a.top>b.bottom)}
+function dodge(){
+  if(tries>=9)return;
+  tries++;
+  var A=ar.getBoundingClientRect(),w=no.offsetWidth,h=no.offsetHeight,x,y,r,k=0,Y=yes.getBoundingClientRect();
+  do{x=Math.random()*(A.width-w);y=Math.random()*(A.height-h);
+     r={left:A.left+x,top:A.top+y,right:A.left+x+w,bottom:A.top+y+h};k++}
+  while(overlap(r,{left:Y.left-8,top:Y.top-8,right:Y.right+8,bottom:Y.bottom+8})&&k<40);
+  no.style.transform='none';no.style.left=x+'px';no.style.top=y+'px';
+  var s=Math.max(.6,1-tries*.05);no.style.scale=s;
+  yes.style.scale=Math.min(1.7,1+tries*.09);
+  msg.textContent=lines[Math.min(tries,lines.length-1)];em.textContent=faces[Math.min(tries,faces.length-1)];
+  if(tries>=9){no.textContent='ok fine, yes 😌';no.style.scale=1;no.className='btn hot';no.style.left='50%';no.style.top='160px';no.style.transform='translateX(-50%)'}
+}
+['pointerenter','touchstart','pointerdown'].forEach(function(t){no.addEventListener(t,function(e){if(tries<9){e.preventDefault();dodge()}},{passive:false})});
+document.addEventListener('pointermove',function(e){
+  if(tries>=9||!document.getElementById('s4').classList.contains('on'))return;
+  var b=no.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2;
+  if(Math.hypot(e.clientX-cx,e.clientY-cy)<70)dodge();
+});
+function win(){document.getElementById('ask').style.display='none';document.getElementById('win').classList.add('on');hearts(60)}
+yes.onclick=win;
+no.onclick=function(){if(tries>=9)win();else dodge()};
+document.getElementById('boom2').onclick=function(){hearts(50)};
+document.getElementById('replay').onclick=function(){tries=0;no.textContent='No 💔';no.className='btn';no.style.cssText='';yes.style.scale=1;msg.textContent=lines[0];em.textContent=faces[0];document.getElementById('win').classList.remove('on');document.getElementById('ask').style.display='block'};
+document.getElementById('more').onclick=function(){go('s3','s4');hearts(16)};
+})();
+</script>
+</body>
+</html>
